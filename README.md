@@ -9,3 +9,6 @@
 
 # Документация 
 https://wiki.aptkop.ru
+
+# Дискорд
+https://aptkop.ru/ds
