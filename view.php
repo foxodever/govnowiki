@@ -27,6 +27,8 @@ $st = $wiki->replace($st, "====", "h3");
 $st = $wiki->replace($st, "===", "h4");
 $st = $wiki->replace($st, "==", "h5");
 $st = $wiki->replace($st, "''", "tt");
+$st = str_replace("[yt]", '<iframe width="1280" height="720" src="', $st);
+$st = str_replace("[/yt]", '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', $st);
 $a = substr_count($st, "[[");
 $a = $a + 1;
 for ($i = 0; $i != $a; $i++) {
